@@ -26,16 +26,15 @@ modules:
       - libvirt
       - virt-manager
       - virt-install
-    remove:
 
   - type: script
     snippets:
       - "mkdir /nix"
 
-  - type: systemd
-    system:
-    enabled:
-      - libvirtd
+  #- type: systemd
+  #  system:
+  #    enabled:
+  #      - libvirtd
 
   - type: default-flatpaks@v1
     notify: true # Send notification after install/uninstall is finished (true/false)
