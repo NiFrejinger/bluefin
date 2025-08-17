@@ -26,6 +26,7 @@ modules:
       - libvirt
       - virt-manager
       - virt-install
+      - hyprland
 
   - type: script
     snippets:
