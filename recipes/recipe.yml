@@ -32,6 +32,10 @@ modules:
     snippets:
       - "mkdir /nix"
 
+  - type: script
+    scripts:
+      - removehyprwallpapers.sh
+
   #- type: systemd
   #  system:
   #    enabled:
