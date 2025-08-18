@@ -27,6 +27,7 @@ modules:
       - virt-manager
       - virt-install
       - hyprland
+      - quickshell
 
   - type: script
     snippets:
