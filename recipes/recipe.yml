@@ -51,6 +51,7 @@ modules:
       install:
         - app.zen_browser.zen
         - md.obsidian.Obsidian
+        - eu.betterbird.Betterbird
       remove:
         - org.gnome.eog
         - org.mozilla.firefox
