@@ -32,6 +32,12 @@ modules:
     snippets:
       - "mkdir /nix"
 
+  - type: rpm-ostree
+    respos:
+      - https://copr.fedorainfracloud.org/coprs/errornointernet/quickshell/
+    install:
+      - quickshell
+
   - type: script
     scripts:
       - removehyprwallpapers.sh
