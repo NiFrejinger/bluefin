@@ -34,7 +34,7 @@ modules:
 
   - type: rpm-ostree
     repos:
-      - https://copr.fedorainfracloud.org/coprs/errornointernet/quickshell/
+      - https://copr.fedorainfracloud.org/coprs/errornointernet/quickshell/repo/%OS_VERSION%/errornointernet-quickshell-%OS_VERSION%.repo
     install:
       - quickshell
 
