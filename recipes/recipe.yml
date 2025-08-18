@@ -12,22 +12,18 @@ image-version: stable # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+
+  - from-file: common/hyprland.yml
+
   - type: files
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/errornointernet/quickshell/repo/fedora-%OS_VERSION%/errornointernet-quickshell-fedora-%OS_VERSION%.repo
-    install:
-      # virt
-      - qemu
-      - libvirt
-      - virt-manager
-      - virt-install
-      - hyprland
-      - quickshell
+#  - type: rpm-ostree
+#    repos:
+#      - https://copr.fedorainfracloud.org/coprs/errornointernet/quickshell/repo/fedora-%OS_VERSION%/errornointernet-quickshell-fedora-%OS_VERSION%.repo
+#    install:
 
   - type: script
     snippets:
