@@ -33,7 +33,7 @@ modules:
       - "mkdir /nix"
 
   - type: rpm-ostree
-    respos:
+    repos:
       - https://copr.fedorainfracloud.org/coprs/errornointernet/quickshell/
     install:
       - quickshell
