@@ -20,38 +20,13 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-#  - type: rpm-ostree
-#    repos:
-#      - https://copr.fedorainfracloud.org/coprs/errornointernet/quickshell/repo/fedora-%OS_VERSION%/errornointernet-quickshell-fedora-%OS_VERSION%.repo
-#    install:
-
   - type: script
     snippets:
       - "mkdir /nix"
 
-  #- type: rpm-ostree
-  #  repos:
-  #    - copr:copr.fedorainfracloud.org:errornointernet:quickshell
-  #  install:
-  #    - quickshell
-
-  - type: script
-    scripts:
-      - removehyprwallpapers.sh
-
-  #- type: systemd
-  #  system:
-  #    enabled:
-  #      - libvirtd
-
   - type: default-flatpaks@v1
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
-      # If no repo information is specified, Flathub will be used by default
-      install:
-        - app.zen_browser.zen
-        - md.obsidian.Obsidian
-        - eu.betterbird.Betterbird
       remove:
         - org.gnome.eog
         - org.mozilla.firefox
