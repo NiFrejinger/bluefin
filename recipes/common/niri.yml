@@ -10,3 +10,9 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/ulysg/xwayland-satellite/repo/fedora-%OS_VERSION%/ulysg-xwayland-satellite-fedora-%OS_VERSION%.repo
     install:
       - xwayland-satellite
+
+  - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/gvalkov/vicinae/repo/fedora-%OS_VERSION%/gvalkov-vicinae-fedora-%OS_VERSION%.repo
+    install:
+      - vicinae
