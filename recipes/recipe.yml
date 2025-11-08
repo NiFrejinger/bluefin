@@ -23,6 +23,9 @@ modules:
   - type: rpm-ostree
     install:
       - docker
+      - docker-cli
+      - containerd
+      - docker-compose-switch
       - docker-compose
 
   - type: script
