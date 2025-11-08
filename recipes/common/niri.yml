@@ -11,8 +11,9 @@ modules:
     install:
       - xwayland-satellite
 
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/gvalkov/vicinae/repo/fedora-%OS_VERSION%/gvalkov-vicinae-fedora-%OS_VERSION%.repo
-    install:
-      - vicinae
+#  - type: rpm-ostree
+#    repos:
+#      - https://copr.fedorainfracloud.org/coprs/gvalkov/vicinae/repo/fedora-%OS_VERSION%/gvalkov-vicinae-fedora-%OS_VERSION%.repo
+#    install:
+#      - vicinae
+#
