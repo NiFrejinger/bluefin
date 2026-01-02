@@ -28,6 +28,12 @@ modules:
       - docker-compose-switch
       - docker-compose
 
+  - type: rpm-ostree
+    repos:
+      - netbird.repo
+    install:
+      - netbird
+
   - type: script
     snippets:
       - "mkdir /nix"
