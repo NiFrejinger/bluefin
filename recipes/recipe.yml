@@ -33,6 +33,7 @@ modules:
       - netbird.repo
     install:
       - netbird
+      - netbird-ui
 
   - type: script
     snippets:
