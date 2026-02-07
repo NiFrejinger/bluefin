@@ -28,12 +28,12 @@ modules:
       - docker-compose-switch
       - docker-compose
 
-  - type: rpm-ostree
-    repos:
-      - netbird.repo
-    install:
-      - netbird
-      - netbird-ui
+  # - type: rpm-ostree
+  #   repos:
+  #     - netbird.repo
+  #   install:
+  #     - netbird
+  #     - netbird-ui
 
   - type: script
     snippets:
