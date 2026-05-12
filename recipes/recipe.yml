@@ -29,6 +29,8 @@ modules:
       - docker-compose
       - qemu
       - qemu-kvm
+      - libvirt
+      - virt-install
   # - type: rpm-ostree
   #   repos:
   #     - netbird.repo
