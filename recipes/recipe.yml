@@ -27,7 +27,8 @@ modules:
       - containerd
       - docker-compose-switch
       - docker-compose
-
+    remove:
+      - mako
   # - type: rpm-ostree
   #   repos:
   #     - netbird.repo
