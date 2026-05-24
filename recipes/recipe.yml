@@ -27,8 +27,13 @@ modules:
       - containerd
       - docker-compose-switch
       - docker-compose
+      - qemu
+      - qemu-kvm
+      - libvirt
+      - virt-install
     remove:
       - mako
+
   # - type: rpm-ostree
   #   repos:
   #     - netbird.repo
