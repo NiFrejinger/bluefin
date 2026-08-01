@@ -28,8 +28,8 @@ modules:
       - qemu-kvm
       - libvirt
       - virt-install
-    remove:
-      - mako
+    # remove:
+      # - mako
 
   # - type: rpm-ostree
   #   repos:
