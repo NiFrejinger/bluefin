@@ -31,6 +31,17 @@ modules:
     # remove:
       # - mako
 
+  - type: dnf
+    repos:
+      cleanup: true
+      copr:
+        - ublue-os/packages
+    install:
+      skip-unavailable: true
+      allow-erasing: true
+      packages:
+        - niri  
+
   # - type: rpm-ostree
   #   repos:
   #     - netbird.repo
